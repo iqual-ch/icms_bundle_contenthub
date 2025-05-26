@@ -6,7 +6,8 @@
 ### Useful commands
 Copy the staged file to a temporary recipe config folder
 ```bash
-git diff --name-only --cached | xargs -I{} cp {} drupal/recipes/staged-config
+mkdir -p drupal/packages/staged-config && \
+git diff --name-only --cached | xargs -I{} cp {} drupal/packages/staged-config
 ```
 
 Config Actions docos:
