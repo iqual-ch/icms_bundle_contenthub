@@ -3,6 +3,7 @@ description: 'A content type and view to help you manage events.'
 type: 'Site'
 
 recipes:
+  - icms_publishing_date
   - icms_topics
 
 install:
@@ -15,11 +16,6 @@ install:
   - graphql_core_schema
 
 config:
-  # import:
-  #   # Contrib
-    # pathauto: "*"
-  #   - field.storage.node.body
-  #   - field.storage.node.field_when
   actions:
   # GraphQL Core Schema
     graphql.graphql_servers.graphql:

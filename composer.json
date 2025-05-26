@@ -11,6 +11,7 @@
   },
   "require": {
     "iqual/blokkli_starterkit": "^1.0",
+    "iqual/icms_publishing_date": "*",
     "iqual/icms_topics": "*"
   },
   "version": "1.x-dev",

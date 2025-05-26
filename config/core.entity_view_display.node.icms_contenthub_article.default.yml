@@ -3,9 +3,11 @@ status: true
 dependencies:
   config:
     - field.field.node.icms_contenthub_article.field_icms_contenthub_duration
+    - field.field.node.icms_contenthub_article.field_icms_publishing_date
     - field.field.node.icms_contenthub_article.field_icms_topics
     - node.type.icms_contenthub_article
   module:
+    - datetime
     - user
 id: node.icms_contenthub_article.default
 targetEntityType: node
@@ -19,6 +21,15 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_icms_publishing_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 103
     region: content
   field_icms_topics:
     type: entity_reference_label

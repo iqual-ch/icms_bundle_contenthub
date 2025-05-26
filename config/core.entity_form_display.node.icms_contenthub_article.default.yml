@@ -3,10 +3,13 @@ status: true
 dependencies:
   config:
     - field.field.node.icms_contenthub_article.field_icms_contenthub_duration
+    - field.field.node.icms_contenthub_article.field_icms_publishing_date
     - field.field.node.icms_contenthub_article.field_icms_topics
     - node.type.icms_contenthub_article
+    - workflows.workflow.editorial
   module:
     - content_moderation
+    - datetime
     - path
     - tagify
 id: node.icms_contenthub_article.default
@@ -27,6 +30,12 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_icms_publishing_date:
+    type: datetime_default
+    weight: 123
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_icms_topics:
     type: tagify_select_widget
