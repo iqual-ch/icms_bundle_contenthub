@@ -1,0 +1,20 @@
+{
+  "name": "iqual/icms_bundle_contenthub",
+  "type": "drupal-recipe",
+  "description": "A content type and view to help manage events in Drupal.",
+  "keywords": ["ICMS", "recipe", "Drupal recipes", "drupal recipe"],
+  "license": ["GPL-2.0-or-later"],
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://support-iqual.atlassian.net/wiki/spaces/ICMS/pages/4553801729/Bundle+Content+Hub",
+    "source": "https://github.com/iqual-ch/blokkli-starterkit-sw-experiment"
+  },
+  "require": {
+    "iqual/blokkli_starterkit": "^1.0",
+    "iqual/icms_topics": "*"
+  },
+  "version": "1.x-dev",
+  "suggest": {
+    "drupal/icms_some_other_recipe": "Creates some functionality in ICMS"
+  }
+}

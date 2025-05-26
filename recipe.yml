@@ -1,0 +1,30 @@
+name: 'ICMS Content Hub Recipe'
+description: 'A content type and view to help you manage events.'
+type: 'Site'
+
+recipes:
+  - icms_topics
+
+install:
+  # Core
+  - node
+  - user
+  - views
+  # Contrib
+  - blokkli_starterkit
+  - graphql_core_schema
+
+config:
+  # import:
+  #   # Contrib
+    # pathauto: "*"
+  #   - field.storage.node.body
+  #   - field.storage.node.field_when
+  actions:
+  # GraphQL Core Schema
+    graphql.graphql_servers.graphql:
+      simple_config_update:
+        schema_configuration.core_composable.fields.node.field_icms_contenthub_duration: field_icms_contenthub_duration
+        schema_configuration.core_composable.bundles.node.icms_contenthub_article:
+          enabled: true
+

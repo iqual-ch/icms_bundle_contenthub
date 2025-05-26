@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.icms_contenthub_article.field_icms_contenthub_duration
+    - field.field.node.icms_contenthub_article.field_icms_topics
+    - node.type.icms_contenthub_article
+  module:
+    - user
+id: node.icms_contenthub_article.default
+targetEntityType: node
+bundle: icms_contenthub_article
+mode: default
+content:
+  field_icms_contenthub_duration:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_icms_topics:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
