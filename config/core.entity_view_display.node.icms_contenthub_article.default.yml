@@ -2,6 +2,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.blokkli_node.default
+    - field.field.node.icms_contenthub_article.field_blokkli_comments
     - field.field.node.icms_contenthub_article.field_icms_contenthub_duration
     - field.field.node.icms_contenthub_article.field_icms_paragraphs
     - field.field.node.icms_contenthub_article.field_icms_publishing_date
@@ -14,6 +16,7 @@ dependencies:
     - field.field.node.icms_contenthub_article.field_metatags
     - node.type.icms_contenthub_article
   module:
+    - comment
     - datetime
     - entity_reference_revisions
     - metatag
@@ -24,6 +27,15 @@ targetEntityType: node
 bundle: icms_contenthub_article
 mode: default
 content:
+  field_blokkli_comments:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 108
+    region: content
   field_icms_contenthub_duration:
     type: string
     label: above

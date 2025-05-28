@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.icms_contenthub_article.field_blokkli_comments
     - field.field.node.icms_contenthub_article.field_icms_contenthub_duration
     - field.field.node.icms_contenthub_article.field_icms_paragraphs
     - field.field.node.icms_contenthub_article.field_icms_publishing_date
@@ -14,6 +15,7 @@ dependencies:
     - field.field.node.icms_contenthub_article.field_metatags
     - node.type.icms_contenthub_article
   module:
+    - comment
     - content_moderation
     - datetime
     - field_group
@@ -21,6 +23,7 @@ dependencies:
     - metatag
     - paragraphs
     - path
+    - scheduler
     - tagify
     - tagify_user_list
     - text
@@ -123,6 +126,12 @@ content:
   created:
     type: datetime_timestamp
     weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_blokkli_comments:
+    type: comment_default
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -229,6 +238,17 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 52
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  scheduler_settings:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   simple_sitemap:
     weight: 7
     region: content
@@ -269,6 +289,12 @@ content:
       image_style: thumbnail
       show_entity_id: 0
     third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 54
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   url_redirects:
     weight: 6
     region: content
@@ -277,6 +303,4 @@ content:
 hidden:
   field_icms_teaser_subtitle: true
   promote: true
-  publish_on: true
   sticky: true
-  unpublish_on: true
