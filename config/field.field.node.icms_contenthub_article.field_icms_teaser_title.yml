@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icms_teaser_title
+    - node.type.icms_contenthub_article
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.icms_contenthub_article.field_icms_teaser_title
+field_name: field_icms_teaser_title
+entity_type: node
+bundle: icms_contenthub_article
+label: 'Teaser Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

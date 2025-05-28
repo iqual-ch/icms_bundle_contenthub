@@ -1,0 +1,28 @@
+uuid: d8c86e5f-32b3-4f49-bdaa-130dcc45bbd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icms_teaser_text
+    - filter.format.icms_restricted
+    - node.type.icms_contenthub_article
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.icms_contenthub_article.field_icms_teaser_text
+field_name: field_icms_teaser_text
+entity_type: node
+bundle: icms_contenthub_article
+label: 'Teaser Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - icms_restricted
+field_type: text_long

@@ -3,11 +3,21 @@ status: true
 dependencies:
   config:
     - field.field.node.icms_contenthub_article.field_icms_contenthub_duration
+    - field.field.node.icms_contenthub_article.field_icms_paragraphs
     - field.field.node.icms_contenthub_article.field_icms_publishing_date
+    - field.field.node.icms_contenthub_article.field_icms_teaser_image
+    - field.field.node.icms_contenthub_article.field_icms_teaser_pretitle
+    - field.field.node.icms_contenthub_article.field_icms_teaser_subtitle
+    - field.field.node.icms_contenthub_article.field_icms_teaser_text
+    - field.field.node.icms_contenthub_article.field_icms_teaser_title
     - field.field.node.icms_contenthub_article.field_icms_topics
+    - field.field.node.icms_contenthub_article.field_metatags
     - node.type.icms_contenthub_article
   module:
     - datetime
+    - entity_reference_revisions
+    - metatag
+    - text
     - user
 id: node.icms_contenthub_article.default
 targetEntityType: node
@@ -22,6 +32,15 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
+  field_icms_paragraphs:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 107
+    region: content
   field_icms_publishing_date:
     type: datetime_default
     label: above
@@ -31,6 +50,45 @@ content:
     third_party_settings: {  }
     weight: 103
     region: content
+  field_icms_teaser_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_icms_teaser_pretitle:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_icms_teaser_subtitle:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_icms_teaser_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_icms_teaser_title:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
   field_icms_topics:
     type: entity_reference_label
     label: above
@@ -38,6 +96,13 @@ content:
       link: true
     third_party_settings: {  }
     weight: 102
+    region: content
+  field_metatags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
     region: content
   links:
     settings: {  }
