@@ -14,6 +14,7 @@ install:
   # Contrib
   - blokkli_starterkit
   - graphql_core_schema
+  - tagify_user_list
 
 config:
   actions:

@@ -11,11 +11,9 @@
   },
   "require": {
     "iqual/blokkli_starterkit": "^1.0",
+    "drupal/tagify": "^1.2",
     "iqual/icms_publishing_date": "*",
     "iqual/icms_topics": "*"
   },
-  "version": "1.x-dev",
-  "suggest": {
-    "drupal/icms_some_other_recipe": "Creates some functionality in ICMS"
-  }
+  "version": "1.x-dev"
 }
