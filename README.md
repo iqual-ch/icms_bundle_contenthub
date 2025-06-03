@@ -15,5 +15,5 @@ https://git.drupalcode.org/project/distributions_recipes/-/blob/1.0.x/docs/confi
 
 
 ## TODO:
-- [] Handle translations
+- [x] Handle translations
 - [] validation errors: XYZ is not a supported key.

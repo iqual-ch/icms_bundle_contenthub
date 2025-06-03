@@ -2,16 +2,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.icms_contenthub_article
+    - paragraphs.paragraphs_type.icms_layout_contenthub
   module:
     - content_translation
 third_party_settings:
   content_translation:
     enabled: true
     bundle_settings:
-      untranslatable_fields_hide: '0'
-id: node.icms_contenthub_article
-target_entity_type_id: node
-target_bundle: icms_contenthub_article
+      untranslatable_fields_hide: '1'
+id: paragraph.icms_layout_contenthub
+target_entity_type_id: paragraph
+target_bundle: icms_layout_contenthub
 default_langcode: site_default
 language_alterable: false

@@ -15,6 +15,7 @@ install:
   - blokkli_starterkit
   - graphql_core_schema
   - tagify_user_list
+  - conditional_fields
 
 config:
   actions:
@@ -22,6 +23,14 @@ config:
     graphql.graphql_servers.graphql:
       simple_config_update:
         schema_configuration.core_composable.fields.node.field_icms_contenthub_duration: field_icms_contenthub_duration
-        schema_configuration.core_composable.bundles.node.icms_contenthub_article:
+        schema_configuration.core_composable.fields.paragraph.field_icms_listing_type: field_icms_listing_type
+        schema_configuration.core_composable.bundles.paragraph.icms_layout_contenthub:
+          enabled: true
+  # Enable the Content Hub Paragraph type on all node types
+    field.field.node.*.field_icms_paragraphs:
+      simple_config_update:
+        settings.handler_settings.target_bundles.icms_layout_contenthub: icms_layout_contenthub
+        settings.handler_settings.target_bundles_drag_drop.icms_layout_contenthub:
+          weight: 50
           enabled: true
 
