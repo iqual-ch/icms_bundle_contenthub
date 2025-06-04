@@ -23,6 +23,8 @@ config:
     graphql.graphql_servers.graphql:
       simple_config_update:
         schema_configuration.core_composable.fields.node.field_icms_contenthub_duration: field_icms_contenthub_duration
+        schema_configuration.core_composable.bundles.node.icms_contenthub_article:
+          enabled: true
         schema_configuration.core_composable.fields.paragraph.field_icms_listing_type: field_icms_listing_type
         schema_configuration.core_composable.bundles.paragraph.icms_layout_contenthub:
           enabled: true
