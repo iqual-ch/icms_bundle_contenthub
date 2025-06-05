@@ -23,7 +23,7 @@ third_party_settings:
     unpublish_revision: false
 name: 'Content Hub Article'
 type: icms_contenthub_article
-description: 'Article format for the Content Hub. Used to create topic-focused posts with custom publishing dates, reading time, taxonomy tags, and iCMS layout components. Supports multilingual content and structured teasers.'
+description: 'Article format for the Content Hub. Used to create topic-focused posts with custom publishing dates, reading time, taxonomy tags, and ICMS layout components. Supports multilingual content and structured teasers.'
 help: null
 new_revision: true
 preview_mode: 0
