@@ -28,6 +28,7 @@ config:
         schema_configuration.core_composable.fields.paragraph.field_icms_listing_type: field_icms_listing_type
         schema_configuration.core_composable.bundles.paragraph.icms_layout_contenthub:
           enabled: true
+        schema_configuration.core_composable.fields.user.user_picture: user_picture
   # Enable the Content Hub Paragraph type on all node types
     field.field.node.*.field_icms_paragraphs:
       simple_config_update:
@@ -35,4 +36,7 @@ config:
         settings.handler_settings.target_bundles_drag_drop.icms_layout_contenthub:
           weight: 50
           enabled: true
-
+    paragraphs_blokkli.settings:
+      'simpleConfigArray:append':
+        property: enabled_types.node
+        values: [icms_contenthub_article]
