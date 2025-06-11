@@ -1,3 +1,6 @@
 name: 'Content Hub Artikel'
-description: 'Artikel-Format für den Content Hub. Wird verwendet, um themenbezogene Beiträge mit benutzerdefinierten Veröffentlichungsdaten, geschätzter Lesezeit, Taxonomie-Tags und ICMS-Layout-Komponenten zu erstellen. Unterstützt mehrsprachige Inhalte und strukturierte Teaser.'
+description: 'Verwende <em>Content Hub Articles</em>, um themenbezogene Beiträge mit individuellem Veröffentlichungsdatum, Lesezeit, Taxonomie-Tags und ICMS-Layout-Komponenten zu erstellen.'
+third_party_settings:
+  node_title_help_text:
+    title_help: 'Haupttitel der Seite. Wird für Meta-Daten, Menüeintrag und die Anzeige im Backend verwendet, sofern nicht überschrieben.'
 help: ''
