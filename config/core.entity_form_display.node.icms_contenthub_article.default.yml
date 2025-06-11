@@ -5,7 +5,6 @@ dependencies:
     - field.field.node.icms_contenthub_article.field_blokkli_comments
     - field.field.node.icms_contenthub_article.field_icms_contenthub_duration
     - field.field.node.icms_contenthub_article.field_icms_paragraphs
-    - field.field.node.icms_contenthub_article.field_icms_publishing_date
     - field.field.node.icms_contenthub_article.field_icms_teaser_image
     - field.field.node.icms_contenthub_article.field_icms_teaser_pretitle
     - field.field.node.icms_contenthub_article.field_icms_teaser_subtitle
@@ -52,7 +51,6 @@ third_party_settings:
         - title
         - field_icms_topics
         - field_icms_contenthub_duration
-        - field_icms_publishing_date
       label: 'Meta Information'
       region: content
       parent_name: group_tabs
@@ -160,12 +158,6 @@ content:
       features:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
-    third_party_settings: {  }
-  field_icms_publishing_date:
-    type: datetime_default
-    weight: 4
-    region: content
-    settings: {  }
     third_party_settings: {  }
   field_icms_teaser_image:
     type: media_library_widget

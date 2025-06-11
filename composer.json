@@ -11,8 +11,7 @@
   },
   "require": {
     "iqual/blokkli_starterkit": "^1.0",
-    "drupal/conditional_fields": "^4.0@alpha",
-    "iqual/icms_publishing_date": "*"
+    "drupal/conditional_fields": "^4.0@alpha"
   },
   "version": "1.x-dev"
 }

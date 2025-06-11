@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.icms_contenthub_article.field_blokkli_comments
     - field.field.node.icms_contenthub_article.field_icms_contenthub_duration
     - field.field.node.icms_contenthub_article.field_icms_paragraphs
-    - field.field.node.icms_contenthub_article.field_icms_publishing_date
     - field.field.node.icms_contenthub_article.field_icms_teaser_image
     - field.field.node.icms_contenthub_article.field_icms_teaser_pretitle
     - field.field.node.icms_contenthub_article.field_icms_teaser_subtitle
@@ -52,15 +51,6 @@ content:
       link: ''
     third_party_settings: {  }
     weight: 107
-    region: content
-  field_icms_publishing_date:
-    type: datetime_default
-    label: above
-    settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
-    weight: 103
     region: content
   field_icms_teaser_image:
     type: entity_reference_entity_view

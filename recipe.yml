@@ -2,9 +2,6 @@ name: 'ICMS Content Hub Recipe'
 description: 'A content type and view to help you manage events.'
 type: 'Site'
 
-recipes:
-  - icms_publishing_date
-
 install:
   # Core
   - node
@@ -33,9 +30,7 @@ config:
     field.field.node.*.field_icms_paragraphs:
       simple_config_update:
         settings.handler_settings.target_bundles.icms_layout_contenthub: icms_layout_contenthub
-        settings.handler_settings.target_bundles_drag_drop.icms_layout_contenthub:
-          weight: 50
-          enabled: true
+        settings.handler_settings.target_bundles_drag_drop.icms_layout_contenthub.enabled: true
     paragraphs_blokkli.settings:
       'simpleConfigArray:append':
         property: enabled_types.node
