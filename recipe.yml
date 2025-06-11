@@ -4,7 +4,6 @@ type: 'Site'
 
 recipes:
   - icms_publishing_date
-  - icms_topics
 
 install:
   # Core
@@ -22,6 +21,7 @@ config:
   # GraphQL Core Schema
     graphql.graphql_servers.graphql:
       simple_config_update:
+        schema_configuration.core_composable.fields.paragraph.field_icms_topics: field_icms_topics
         schema_configuration.core_composable.fields.node.field_icms_contenthub_duration: field_icms_contenthub_duration
         schema_configuration.core_composable.bundles.node.icms_contenthub_article:
           enabled: true
