@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.icms_contenthub_article.field_icms_paragraphs
     - field.field.node.icms_contenthub_article.field_icms_teaser_image
     - field.field.node.icms_contenthub_article.field_icms_teaser_pretitle
-    - field.field.node.icms_contenthub_article.field_icms_teaser_subtitle
     - field.field.node.icms_contenthub_article.field_icms_teaser_text
     - field.field.node.icms_contenthub_article.field_icms_teaser_title
     - field.field.node.icms_contenthub_article.field_icms_topics
@@ -68,14 +67,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 101
-    region: content
-  field_icms_teaser_subtitle:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 103
     region: content
   field_icms_teaser_text:
     type: text_default
