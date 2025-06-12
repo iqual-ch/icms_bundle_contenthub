@@ -26,6 +26,6 @@ Config Actions infos:
 
 ## TODO:
 - [x] Handle translations (patch installed)
-- [ ] validation errors: XYZ is not a supported key (Flat Taxonomy schema issue?).
+- [ ] ~~validation errors: XYZ is not a supported key (Flat Taxonomy schema issue?).~~ Flat tax has been moved to ICMS core
 - [ ] Test overlapping config with other recipes (handle existing config)
-- [ ] Removing drupal/conditional_fields and use State API instead (blokkli issue, CF not applied)
+- [ ] Removing drupal/conditional_fields and use ~~State API~~ something else instead (blokkli issue, in the custom rendering of the paragraph form).
