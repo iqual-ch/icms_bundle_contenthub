@@ -15,7 +15,7 @@ field_name: field_icms_teaser_image
 entity_type: node
 bundle: icms_contenthub_article
 label: 'Teaser Image'
-description: ''
+description: "A visually appealing image displayed in the teaser.<br />\r\n<strong>Leave empty to use a default image.</strong><br />\r\n"
 required: false
 translatable: false
 default_value: {  }

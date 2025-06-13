@@ -1,4 +1,3 @@
-uuid: d8c86e5f-32b3-4f49-bdaa-130dcc45bbd1
 langcode: en
 status: true
 dependencies:
@@ -17,7 +16,7 @@ field_name: field_icms_teaser_text
 entity_type: node
 bundle: icms_contenthub_article
 label: 'Teaser Text'
-description: ''
+description: "A short description that explains the content or purpose of the teaser. We recommend a short sentence, as space in teasers is limited depending on the layout.<br />\r\n<strong>Leave empty to use a trimmed version of the page description.</strong>"
 required: false
 translatable: true
 default_value: {  }

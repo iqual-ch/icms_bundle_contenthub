@@ -9,14 +9,12 @@ dependencies:
 third_party_settings:
   tmgmt_content:
     excluded: false
-_core:
-  default_config_hash: 3MrybIhEKYNaJCi8ayjIeN3DUdQxNbQvphkGX2htRbI
 id: node.icms_contenthub_article.field_icms_contenthub_duration
 field_name: field_icms_contenthub_duration
 entity_type: node
 bundle: icms_contenthub_article
 label: 'Reading Duration'
-description: ''
+description: 'A short text describing how long it takes to read the content.'
 required: false
 translatable: true
 default_value: {  }

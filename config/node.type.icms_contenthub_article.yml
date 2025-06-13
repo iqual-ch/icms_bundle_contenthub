@@ -18,13 +18,13 @@ third_party_settings:
     publish_past_date_created: false
     publish_required: false
     publish_revision: false
-    publish_touch: true
+    publish_touch: false
     show_message_after_update: true
     unpublish_enable: true
     unpublish_required: false
     unpublish_revision: false
   node_title_help_text:
-    title_help: "Main title used for the page's meta, menu label, and admin display, unless overridden."
+    title_help: "Main title used for the page's meta, menu label and admin display, provided these are not overridden in the corresponding places."
 name: 'Content Hub Article'
 type: icms_contenthub_article
 description: 'Use <em>Content Hub Articles</em> to create topic-focused posts with custom publishing dates, reading time, taxonomy tags, and ICMS layout components.'
