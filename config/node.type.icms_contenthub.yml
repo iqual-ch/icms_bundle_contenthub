@@ -26,7 +26,7 @@ third_party_settings:
   node_title_help_text:
     title_help: "Main title used for the page's meta, menu label and admin display, provided these are not overridden in the corresponding places."
 name: 'Content Hub Article'
-type: icms_contenthub_article
+type: icms_contenthub
 description: 'Use <em>Content Hub Articles</em> to create topic-focused posts with custom publishing dates, reading time, taxonomy tags, and ICMS layout components.'
 help: null
 new_revision: true

@@ -3,16 +3,16 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_icms_teaser_title
-    - node.type.icms_contenthub_article
+    - node.type.icms_contenthub
   module:
     - tmgmt_content
 third_party_settings:
   tmgmt_content:
     excluded: false
-id: node.icms_contenthub_article.field_icms_teaser_title
+id: node.icms_contenthub.field_icms_teaser_title
 field_name: field_icms_teaser_title
 entity_type: node
-bundle: icms_contenthub_article
+bundle: icms_contenthub
 label: 'Teaser Title'
 description: 'Leave empty to use the page title.'
 required: false

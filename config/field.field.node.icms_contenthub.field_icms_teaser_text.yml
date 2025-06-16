@@ -4,17 +4,17 @@ dependencies:
   config:
     - field.storage.node.field_icms_teaser_text
     - filter.format.icms_restricted
-    - node.type.icms_contenthub_article
+    - node.type.icms_contenthub
   module:
     - text
     - tmgmt_content
 third_party_settings:
   tmgmt_content:
     excluded: false
-id: node.icms_contenthub_article.field_icms_teaser_text
+id: node.icms_contenthub.field_icms_teaser_text
 field_name: field_icms_teaser_text
 entity_type: node
-bundle: icms_contenthub_article
+bundle: icms_contenthub
 label: 'Teaser Text'
 description: "A short description that explains the content or purpose of the teaser. We recommend a short sentence, as space in teasers is limited depending on the layout.<br />\r\n<strong>Leave empty to use a trimmed version of the page description.</strong>"
 required: false

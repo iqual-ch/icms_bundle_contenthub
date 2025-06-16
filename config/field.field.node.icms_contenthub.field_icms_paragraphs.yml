@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_icms_paragraphs
-    - node.type.icms_contenthub_article
+    - node.type.icms_contenthub
     - paragraphs.paragraphs_type.icms_layout_2_col_text_elements
     - paragraphs.paragraphs_type.icms_layout_call_to_action
     - paragraphs.paragraphs_type.icms_layout_cards
@@ -32,10 +32,10 @@ dependencies:
 third_party_settings:
   tmgmt_content:
     excluded: false
-id: node.icms_contenthub_article.field_icms_paragraphs
+id: node.icms_contenthub.field_icms_paragraphs
 field_name: field_icms_paragraphs
 entity_type: node
-bundle: icms_contenthub_article
+bundle: icms_contenthub
 label: Content
 description: ''
 required: false

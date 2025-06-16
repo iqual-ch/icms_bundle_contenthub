@@ -3,16 +3,16 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_icms_teaser_link_label
-    - node.type.icms_contenthub_article
+    - node.type.icms_contenthub
   module:
     - tmgmt_content
 third_party_settings:
   tmgmt_content:
     excluded: false
-id: node.icms_contenthub_article.field_icms_teaser_link_label
+id: node.icms_contenthub.field_icms_teaser_link_label
 field_name: field_icms_teaser_link_label
 entity_type: node
-bundle: icms_contenthub_article
+bundle: icms_contenthub
 label: 'Teaser Link Label'
 description: 'Text for the link in the teaser. <strong>Leave empty to use the default.</strong>'
 required: false

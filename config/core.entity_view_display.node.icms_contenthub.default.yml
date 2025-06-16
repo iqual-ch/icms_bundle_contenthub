@@ -3,27 +3,27 @@ status: true
 dependencies:
   config:
     - core.entity_view_display.comment.blokkli_node.default
-    - field.field.node.icms_contenthub_article.body
-    - field.field.node.icms_contenthub_article.field_blokkli_comments
-    - field.field.node.icms_contenthub_article.field_icms_contenthub_duration
-    - field.field.node.icms_contenthub_article.field_icms_paragraphs
-    - field.field.node.icms_contenthub_article.field_icms_teaser_image
-    - field.field.node.icms_contenthub_article.field_icms_teaser_link_label
-    - field.field.node.icms_contenthub_article.field_icms_teaser_pretitle
-    - field.field.node.icms_contenthub_article.field_icms_teaser_text
-    - field.field.node.icms_contenthub_article.field_icms_teaser_title
-    - field.field.node.icms_contenthub_article.field_icms_topics
-    - field.field.node.icms_contenthub_article.field_metatags
-    - node.type.icms_contenthub_article
+    - field.field.node.icms_contenthub.body
+    - field.field.node.icms_contenthub.field_blokkli_comments
+    - field.field.node.icms_contenthub.field_icms_contenthub_duration
+    - field.field.node.icms_contenthub.field_icms_paragraphs
+    - field.field.node.icms_contenthub.field_icms_teaser_image
+    - field.field.node.icms_contenthub.field_icms_teaser_link_label
+    - field.field.node.icms_contenthub.field_icms_teaser_pretitle
+    - field.field.node.icms_contenthub.field_icms_teaser_text
+    - field.field.node.icms_contenthub.field_icms_teaser_title
+    - field.field.node.icms_contenthub.field_icms_topics
+    - field.field.node.icms_contenthub.field_metatags
+    - node.type.icms_contenthub
   module:
     - comment
     - entity_reference_revisions
     - metatag
     - text
     - user
-id: node.icms_contenthub_article.default
+id: node.icms_contenthub.default
 targetEntityType: node
-bundle: icms_contenthub_article
+bundle: icms_contenthub
 mode: default
 content:
   body:
