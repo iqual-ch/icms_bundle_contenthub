@@ -1,8 +1,6 @@
 # ICMS Recipe: Content Hub
 
-> [!NOTE]
->
-> @TODO: add Recipe description
+> A content type and layout for publishing categorised content.
 
 ### Useful commands
 - Install recipe:

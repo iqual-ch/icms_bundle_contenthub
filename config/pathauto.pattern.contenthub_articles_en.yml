@@ -4,7 +4,7 @@ dependencies:
   module:
     - language
     - node
-id: content_hub_articles_en
+id: contenthub_articles_en
 label: 'Content Hub Articles (EN/FR)'
 type: 'canonical_entities:node'
 pattern: '/articles/[node:title]'

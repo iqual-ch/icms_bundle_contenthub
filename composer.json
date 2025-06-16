@@ -1,7 +1,7 @@
 {
   "name": "iqual/icms_bundle_contenthub",
   "type": "drupal-recipe",
-  "description": "A content type and view to help manage events in Drupal.",
+  "description": "A content type and layout for publishing categorised content.",
   "keywords": ["ICMS", "recipe", "Drupal recipes", "drupal recipe"],
   "license": ["GPL-2.0-or-later"],
   "minimum-stability": "dev",

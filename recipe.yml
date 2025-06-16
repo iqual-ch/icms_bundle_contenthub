@@ -1,5 +1,5 @@
 name: 'ICMS Content Hub Recipe'
-description: 'A content type and view to help you manage events.'
+description: 'A content type and layout for publishing categorised content.'
 type: 'Site'
 
 install:
