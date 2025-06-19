@@ -7,7 +7,7 @@ id: icms_layout_contenthub
 label: 'Content Hub'
 icon_uuid: null
 icon_default: null
-description: 'The <em>Content Hub</em> is a set of functionalities and data structures that allows you to capture topic contributions, which can be supplemented based on structured data. '
+description: 'The <em>Content Hub</em> is a set of functionalities and data structures that allows you to capture topic contributions, which can be supplemented based on structured data.'
 behavior_plugins:
   paragraphs_blokkli_data:
     enabled: true
