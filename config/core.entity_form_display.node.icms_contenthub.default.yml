@@ -5,6 +5,7 @@ dependencies:
     - field.field.node.icms_contenthub.body
     - field.field.node.icms_contenthub.field_blokkli_comments
     - field.field.node.icms_contenthub.field_icms_contenthub_duration
+    - field.field.node.icms_contenthub.field_icms_image
     - field.field.node.icms_contenthub.field_icms_paragraphs
     - field.field.node.icms_contenthub.field_icms_teaser_image
     - field.field.node.icms_contenthub.field_icms_teaser_link_label
@@ -55,6 +56,7 @@ third_party_settings:
         - body
         - field_icms_topics
         - field_icms_contenthub_duration
+        - field_icms_image
         - group_teaser
       label: 'Meta Information'
       region: content
@@ -170,6 +172,13 @@ content:
         maxlength_js: 15
         maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
         maxlength_js_enforce: false
+  field_icms_image:
+    type: media_library_widget
+    weight: 5
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
   field_icms_paragraphs:
     type: paragraphs
     weight: 11

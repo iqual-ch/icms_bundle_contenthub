@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.icms_contenthub.body
     - field.field.node.icms_contenthub.field_blokkli_comments
     - field.field.node.icms_contenthub.field_icms_contenthub_duration
+    - field.field.node.icms_contenthub.field_icms_image
     - field.field.node.icms_contenthub.field_icms_paragraphs
     - field.field.node.icms_contenthub.field_icms_teaser_image
     - field.field.node.icms_contenthub.field_icms_teaser_link_label
@@ -54,6 +55,15 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_icms_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 110
     region: content
   field_icms_paragraphs:
     type: entity_reference_revisions_entity_view
