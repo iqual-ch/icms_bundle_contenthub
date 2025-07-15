@@ -1,17 +1,24 @@
 {
-  "name": "iqual/icms_bundle_contenthub",
-  "type": "drupal-recipe",
-  "description": "A content type and layout for publishing categorised content.",
-  "keywords": ["ICMS", "recipe", "Drupal recipes", "drupal recipe"],
-  "license": ["GPL-2.0-or-later"],
-  "minimum-stability": "dev",
-  "support": {
-    "issues": "https://support-iqual.atlassian.net/wiki/spaces/ICMS/pages/4553801729/Bundle+Content+Hub",
-    "source": "https://github.com/iqual-ch/blokkli-starterkit-sw-experiment"
-  },
-  "require": {
-    "iqual/blokkli_starterkit": "^1.0",
-    "drupal/conditional_fields": "^4.0@alpha"
-  },
-  "version": "1.x-dev"
+    "name": "iqual/icms_bundle_contenthub",
+    "type": "drupal-recipe",
+    "description": "A content type and layout for publishing categorised content.",
+    "keywords": [
+        "ICMS",
+        "recipe",
+        "Drupal recipes",
+        "drupal recipe"
+    ],
+    "license": [
+        "GPL-2.0-or-later"
+    ],
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://support-iqual.atlassian.net/wiki/spaces/ICMS/pages/4553801729/Bundle+Content+Hub",
+        "source": "https://github.com/iqual-ch/blokkli-starterkit-sw-experiment"
+    },
+    "require": {
+        "iqual/blokkli_starterkit": "^1.0",
+        "drupal/conditional_fields": "^4.0@alpha"
+    },
+    "version": "1.x-dev"
 }
