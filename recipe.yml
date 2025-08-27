@@ -12,6 +12,7 @@ install:
   - graphql_core_schema
   - tagify_user_list
   - conditional_fields
+  - schema_article
 
 config:
   actions:
