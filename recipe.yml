@@ -25,6 +25,10 @@ config:
       'simpleConfigArray:append':
         property: enabled_types.node
         values: [icms_contenthub]
+  # Enable content type on teaser layout
+    field.field.paragraph.icms_layout_teasers.field_icms_content_entities:
+      simple_config_update:
+        settings.handler_settings.target_bundles.icms_contenthub: icms_contenthub
   # Add the content type to the editorial workflow
     workflows.workflow.editorial:
       addNodeTypes: [icms_contenthub]
