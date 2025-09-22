@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: icms_contenthub_de
+label: 'Content Hub Articles (DE)'
+type: 'canonical_entities:node'
+pattern: '/artikel/[node:title]'
+selection_criteria:
+  94f7b435-4c94-4347-8ce0-ea3719618e5c:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 94f7b435-4c94-4347-8ce0-ea3719618e5c
+    context_mapping:
+      node: node
+    bundles:
+      icms_contenthub: icms_contenthub
+  f0a58909-a039-4b4d-9f71-d3a1e1a43f4b:
+    id: language
+    negate: false
+    uuid: f0a58909-a039-4b4d-9f71-d3a1e1a43f4b
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      de: de
+selection_logic: and
+weight: -11
+relationships:
+  'node:langcode:language':
+    label: Language

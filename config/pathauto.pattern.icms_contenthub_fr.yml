@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: icms_contenthub_fr
+label: 'Content Hub Articles (FR)'
+type: 'canonical_entities:node'
+pattern: '/articles/[node:title]'
+selection_criteria:
+  c2f8e7a7-8334-424e-99af-0fc6b77448ac:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: c2f8e7a7-8334-424e-99af-0fc6b77448ac
+    context_mapping:
+      node: node
+    bundles:
+      icms_contenthub: icms_contenthub
+  542cf000-c562-4bbc-8c8a-2f46a99e85ef:
+    id: language
+    negate: false
+    uuid: 542cf000-c562-4bbc-8c8a-2f46a99e85ef
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      fr: fr
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

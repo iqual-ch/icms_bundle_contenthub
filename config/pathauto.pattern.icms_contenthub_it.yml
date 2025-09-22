@@ -4,30 +4,29 @@ dependencies:
   module:
     - language
     - node
-id: contenthub_en
-label: 'Content Hub Articles (EN/FR)'
+id: icms_contenthub_it
+label: 'Content Hub Articles (IT)'
 type: 'canonical_entities:node'
-pattern: '/articles/[node:title]'
+pattern: '/articolo/[node:title]'
 selection_criteria:
-  eb0053e7-306e-4ce2-8185-0400e4bbec7d:
+  443ded1c-4ee7-49f0-830f-9f68af7b9414:
     id: 'entity_bundle:node'
     negate: false
-    uuid: eb0053e7-306e-4ce2-8185-0400e4bbec7d
+    uuid: 443ded1c-4ee7-49f0-830f-9f68af7b9414
     context_mapping:
       node: node
     bundles:
       icms_contenthub: icms_contenthub
-  6dcaf0aa-ea2b-45da-89dc-d9354c84378f:
+  9c75fb98-9cb5-420e-b554-0dd6bc526ca3:
     id: language
     negate: false
-    uuid: 6dcaf0aa-ea2b-45da-89dc-d9354c84378f
+    uuid: 9c75fb98-9cb5-420e-b554-0dd6bc526ca3
     context_mapping:
       language: 'node:langcode:language'
     langcodes:
-      en: en
-      fr: fr
+      it: it
 selection_logic: and
-weight: -10
+weight: -9
 relationships:
   'node:langcode:language':
     label: Language
