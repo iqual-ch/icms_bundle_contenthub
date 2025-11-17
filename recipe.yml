@@ -13,6 +13,8 @@ install:
   - tagify_user_list
   - conditional_fields
   - schema_article
+  # Bundle Logic
+  - icms_bundle_contenthub_logic
 
 config:
   actions:

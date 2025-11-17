@@ -18,6 +18,7 @@
     },
     "require": {
         "iqual/blokkli_starterkit": "^1.0",
+        "iqual/icms_bundle_contenthub_logic": "^1.0",
         "drupal/conditional_fields": "^4.0@alpha"
     },
     "version": "1.x-dev"
