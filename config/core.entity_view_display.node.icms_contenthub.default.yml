@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.icms_contenthub.field_icms_teaser_text
     - field.field.node.icms_contenthub.field_icms_teaser_title
     - field.field.node.icms_contenthub.field_icms_topics
+    - field.field.node.icms_contenthub.field_icms_weight
     - field.field.node.icms_contenthub.field_metatags
     - node.type.icms_contenthub
   module:
@@ -134,5 +135,6 @@ content:
     weight: 100
     region: content
 hidden:
+  field_icms_weight: true
   langcode: true
   search_api_excerpt: true
