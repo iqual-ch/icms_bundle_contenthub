@@ -17,9 +17,9 @@
         "source": "https://github.com/iqual-ch/blokkli-starterkit-sw-experiment"
     },
     "require": {
-        "iqual/blokkli_starterkit": "^1.0",
-        "iqual/icms_bundle_contenthub_logic": "^1.0",
-        "drupal/conditional_fields": "^4.0@alpha"
+        "iqual/blokkli_starterkit": "~1.7.0-rc.6",
+        "iqual/icms_bundle_contenthub_logic": "~1.7.0-rc.6",
+        "drupal/conditional_fields": "~4.0.0-alpha6"
     },
     "version": "1.7.0-rc.6"
 }
